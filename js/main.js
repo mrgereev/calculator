@@ -1,16 +1,19 @@
+let input = document.querySelector('.input');
+
+
 function insert(num) {
-    document.form.textview.value = 
-    document.form.textview.value + num;
+    input.textContent = 
+    input.textContent + num;
 }
 
 function clean() {
-    document.form.textview.value = "";
+    input.textContent = "";
 }
 
 function back() {
-    document.form.textview.value = document.form.textview.value.substring(0, document.form.textview.valuelength - 1);
+    input.textContent = input.textContent.substring(0, input.textContent.length - 1);
 }
 
 function equal() {
-    document.form.textview.value = eval(document.form.textview.value);
+    input.textContent = eval(input.textContent);
 }
